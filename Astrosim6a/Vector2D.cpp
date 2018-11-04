@@ -46,15 +46,3 @@ Vec operator-(Vec a, Vec b) { return a -= b;}
 Vec operator*(Vec a, double s) { return a *= s; }
 Vec operator*(double s, Vec a) { return a *= s; }
 Vec operator/(Vec a, double s) { return a /= s; }
-
-int main() {
-  Vec a(3, 4);
-  Vec b(1, -1);
-  cout << a.x() << b.x() << endl;
-  b = a + b;
-  cout << b.x() << ' ' << b.y() << endl;
-
-
-
-  return 0;
-}

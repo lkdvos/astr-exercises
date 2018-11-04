@@ -5,8 +5,8 @@
 #include <iostream>
 using namespace std;
 
-#ifndef VEC_H
-#define VEC_H
+#ifndef VECTOR2D_H
+#define VECTOR2D_H
 #endif
 
 class Vec {
@@ -36,3 +36,12 @@ public:
 
   Vec& operator/=(double s);
 };
+
+
+Vec operator+(Vec a, Vec b);
+Vec operator-(Vec a, Vec b);
+
+//between vector and scalar:
+Vec operator*(Vec a, double s);
+Vec operator*(double s, Vec a);
+Vec operator/(Vec a, double s);
